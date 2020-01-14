@@ -62,6 +62,7 @@ link4.textContent = siteContent["nav"]["nav-item-4"];
 link5.textContent = siteContent["nav"]["nav-item-5"];
 link6.textContent = siteContent["nav"]["nav-item-6"];
 
+
 // DOM is Awesome section
 
 const ctaText = document.querySelector('.cta-text h1');
@@ -150,6 +151,29 @@ const footer = document.getElementsByTagName('footer')[0];
 footer.children[0].innerText = siteContent["footer"]["copyright"];
 
 
+// create, prepend() and appendChild() two links
+
+const newLink1 = document.createElement("a");
+const newLink2 = document.createElement("a");
+
+newLink1.innerText = "Home";
+newLink1.href = "";
+newLink2.innerText = "Blog";
+newLink2.href = "";
+
+const navParent = document.querySelector("nav");
+
+navParent.prepend(newLink1);
+navParent.appendChild(newLink2);
+
+
+// Styling Links green
+
+const allLinks = document.querySelectorAll("nav a");
+
+allLinks.forEach(function(link){
+  link.style.color = "green";
+})
 
 
 
