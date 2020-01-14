@@ -134,6 +134,14 @@ const visionContent = document.querySelector(".bottom-content .text-content:nth-
 
 visionContent.textContent = siteContent["main-content"]["vision-content"]
 
+// Contact section
+
+
+// Footer section
+
+const footer = document.getElementsByTagName('footer')[0];
+
+footer.children[0].innerText = siteContent["footer"]["copyright"];
 
 
 
